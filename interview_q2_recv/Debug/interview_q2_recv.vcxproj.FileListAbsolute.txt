@@ -1,0 +1,2 @@
+C:\Users\muham\source\repos\interview_q2_recv\Debug\interview_q2_recv.exe
+C:\Users\muham\source\repos\interview_q2_recv\Debug\interview_q2_recv.pdb
