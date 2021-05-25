@@ -1,0 +1,5 @@
+C:\Users\muham\source\repos\interview\Debug\interview.exe
+C:\Users\muham\source\repos\interview\Debug\interview.pdb
+C:\Users\muham\source\repos\interview\Debug\interview.vcxproj.CopyComplete
+C:\Users\muham\source\repos\interview\Debug\libcurl-d.dll
+C:\Users\muham\source\repos\interview\Debug\zlibd1.dll
