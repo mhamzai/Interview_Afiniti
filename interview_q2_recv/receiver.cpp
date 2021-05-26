@@ -33,22 +33,25 @@ int main()
 		char buffer[10000];
 		cout << "Client connected!" << endl;
 		int get_dat;
+		ofstream myfile("td1.jpg", ios::out | ios::in | ios::app | ios::binary);
 		do
 		{
 			memset(buffer, 0, sizeof(buffer));
 			get_dat = recv(client, buffer, sizeof(buffer), 0);
 			if (get_dat < 0) { break; }
+			for (int i = 0; i < get_dat; i++)
+			{
+				cout << buffer[i];
+				myfile << buffer[i];
+			}
 			data_size += get_dat;
-			cout << "data received = " << data_size << endl;
 			buf += buffer;
 		} while (get_dat > 1);
 
-		ofstream myfile("td1.jpg", ios::out | ios::in | ios::app | ios::binary);
-		char* tmp;
+		//string s(buffer, data_size);
+		
 		cout << "data size = " << data_size << endl;
-		tmp = new char[data_size];
-		memcpy(tmp, &buf[0], data_size);
-		myfile << tmp;
+		
 		myfile.close();
 
 		closesocket(client);

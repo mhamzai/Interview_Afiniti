@@ -1,2 +1,4 @@
 C:\Users\muham\source\repos\interview_q2\Debug\interview_q2.exe
 C:\Users\muham\source\repos\interview_q2\Debug\interview_q2.pdb
+C:\Users\muham\source\repos\interview_q2_send\Debug\interview_q2.exe
+C:\Users\muham\source\repos\interview_q2_send\Debug\interview_q2.pdb

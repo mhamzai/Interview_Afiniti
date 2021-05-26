@@ -46,16 +46,17 @@ int main(int argc, char* argv[])
 	}
 
 	puts("Connected");
-
+	int len_read = 0;
 	if (myfile.is_open())
 	{
 		string data="";
 		while (getline(myfile, line))
 		{
+			len_read += strlen(line.c_str());
 			data += line;
 		}
-		cout << data << endl;
-		if (send(s, &data[0], strlen(&data[0]), 0) < 0)
+		cout << data << endl << len_read <<endl;
+		if (send(s, data.c_str(), len_read, 0) < 0)
 		{
 			puts("Send failed");
 			return 1;
